@@ -1,8 +1,9 @@
 * {
-  width: 1280px;
+  /* width: 1280px; */
   box-sizing: border-box;
   margin: 0;
   border: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,11 +26,6 @@ header {
 }
 
 #logo {
-  /* position: absolute;
-  width: 184px;
-  height: 60px;
-  left: 0px;
-  top: 0px; */
   width: 184px;
   height: 60px;
   display: flex;
@@ -39,11 +35,6 @@ header {
 }
 
 #logo_title {
-  /* position: absolute;
-  width: 184px;
-  height: 35px;
-  left: 0px;
-  top: calc(50% - 35px / 2 - 12.5px); */
   width: max-content;
 
   font-family: "Georgia";
@@ -55,11 +46,6 @@ header {
 }
 
 #logo_subtitle {
-  /* position: absolute;
-  width: 179px;
-  height: 15px;
-  left: 4px;
-  top: calc(50% - 15px / 2 + 22.5px); */
   width: auto;
 
   font-family: "Arial";
@@ -78,6 +64,12 @@ nav a {
   text-decoration: none;
   margin-left: 32px;
 }
+nav a:active {
+  border-bottom: 3px solid #f1cdb3;
+}
+nav a:hover {
+  color: #fafafa;
+}
 
 #start-screen {
   position: relative;
@@ -93,7 +85,8 @@ nav a {
   position: absolute;
   width: 1200px;
   height: 728px;
-  left: 40px;
+  /* left: 40px; */
+  left: calc(50% - 1200px / 2);
   top: 180px;
 }
 
@@ -252,9 +245,38 @@ nav a {
 
 #pets-content > a {
   position: absolute;
-  width: 261px;
+  width: 262px;
   left: 470px;
   top: 645px;
+}
+
+#pets-content > a span {
+  position: static;
+  left: 17.24%;
+  right: 17.24%;
+  top: 28.85%;
+  bottom: 28.85%;
+
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  /* identical to box height, or 22px */
+
+  letter-spacing: 0.06em;
+
+  /* color-dark-3xl */
+
+  color: #292929;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: center;
+  flex-grow: 0;
+  margin: 10px 0px;
 }
 
 #slider {
@@ -298,6 +320,13 @@ nav a {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.card:hover {
+  background: #ffffff;
+}
+.card:hover a {
+  background: #fddcc4;
+  border-color: #fddcc4;
 }
 
 .card > a span {
@@ -367,6 +396,11 @@ nav a {
 
   text-decoration: none;
 }
+.button_primary:hover,
+.button_secondary:hover {
+  background-color: #fddcc4;
+  border-color: #fddcc4;
+}
 
 .button_secondary {
   padding: 15px 45px;
@@ -397,6 +431,13 @@ nav a {
   box-sizing: border-box;
   border-radius: 100px;
 }
+.button_arrow:hover {
+  background-color: #fddcc4;
+  border-color: #fddcc4;
+}
+.button_arrow:disabled {
+  border-color: #cdcdcd;
+}
 
 .arrow {
   /* Arrow */
@@ -423,7 +464,7 @@ nav a {
 
 #help-content h3 {
   position: absolute;
-  width: 308px;
+  width: 310px;
   height: 90px;
   left: 446px;
   top: 0px;
@@ -557,7 +598,7 @@ nav a {
 
 #donation-content-subcontent h5 {
   position: absolute;
-  width: 307px;
+  width: 308px;
   height: 17px;
   left: 0px;
   top: 110px;
@@ -646,7 +687,8 @@ footer h4 {
   position: absolute;
   width: 1200px;
   height: 310px;
-  left: 40px;
+  /* left: 40px; */
+  left: calc(50% - 1200px / 2);
   top: 40px;
 }
 
@@ -811,7 +853,8 @@ h4 {
   color: #c4c4c4;
 }
 
-h5 {
+h5,
+.h5 {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -821,7 +864,7 @@ h5 {
 
   letter-spacing: 0.06em;
 
-  color: #c4c4c4;
+  /* color: #c4c4c4; */
 }
 
 .h5-modal-window {
@@ -834,7 +877,7 @@ h5 {
 
   letter-spacing: 0.06em;
 
-  color: #c4c4c4;
+  /* color: #c4c4c4; */
 }
 
 .paragraph-l {
@@ -941,3 +984,104 @@ h5 {
       /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
     #211f20;
 }
+
+/* Modal Window */
+/* ----------------------------------------------------------------------- */
+
+#modal-wraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* height: 100vh; */
+  min-height: 877px;
+  background: rgba(41, 41, 41, 0.6);
+
+  position: relative;
+  visibility: hidden;
+}
+
+#modal-window-1280 {
+  position: absolute;
+  width: 952px;
+  height: 552px;
+  left: calc(50% - 952px / 2);
+  top: 136px;
+}
+#modal-window-1280 button {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  left: 890px;
+  top: 0px;
+
+  /* color-primary */
+
+  border: 2px solid #f1cdb3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0);
+}
+#modal-window {
+  position: absolute;
+  width: 900px;
+  height: 500px;
+  left: 0px;
+  top: 52px;
+  background: #fafafa;
+  border-radius: 9px;
+}
+#modal-window:hover {
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+#modal-content {
+  position: absolute;
+  width: 351px;
+  height: 362px;
+  left: 529px;
+  top: 50px;
+  color: unset;
+}
+#modal-content > h3 {
+  position: absolute;
+  width: 145px;
+  height: 45px;
+  left: 1px;
+  top: 0px;
+  color: black;
+}
+#modal-content > h4 {
+  position: absolute;
+  width: 152px;
+  height: 23px;
+  left: 1px;
+  top: 55px;
+  color: black;
+}
+#modal-content > h5 {
+  position: absolute;
+  width: 350px;
+  height: 102px;
+  left: 1px;
+  top: 118px;
+  color: black;
+}
+#modal-content h5 {
+  color: black;
+}
+#modal-content ul {
+  position: absolute;
+  /* width: 155px;
+  height: 102px; */
+  left: 1px;
+  top: 260px;
+}
+#modal-content ul li {
+  margin-bottom: 10px;
+  color: #f1cdb3;
+}
+#modal-content span {
+  color: black;
+}
+/* ----------------------------------------------------------------------- */
+/* Modal Window */

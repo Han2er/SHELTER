@@ -8,7 +8,13 @@
     <title>Preloader</title>
   </head>
   <body>
-    <div id="loader" class="loader"><span>{</span><span>}</span></div>
+    <div>
+      <div class="dog-head">
+        <img src="http://www.clker.com/cliparts/j/3/Z/Y/D/5/dog-head-md.png" />
+      </div>
+
+      <div class="dog-body"></div>
+    </div>
 
     <script>
       window.onload = (event) => {
@@ -16,7 +22,7 @@
           console.log("page is fully loaded");
           //   document.getElementById("loader").style.display = "none";
           window.location.replace("./pages/main/index.html");
-        }, 2000);
+        }, 4000);
       };
     </script>
   </body>

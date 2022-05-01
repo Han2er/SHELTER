@@ -1,45 +1,34 @@
-:root {
-  --background-color: #000000;
-  --loader-color: #c58456;
-  --loader-size: 30vh;
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
+* {
   margin: 0;
-  padding: 0;
 }
-
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--background-color);
+  width: 100vw;
+  height: 100vh;
+  background: url(noise_lines_transparent@2X.png),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
 }
 
-.loader {
-  color: var(--loader-color);
-
-  font-family: Consolas, Menlo, Monaco, monospace;
-  font-weight: bold;
-  font-size: var(--loader-size);
-
-  opacity: 0.8;
-}
-.loader span {
-  display: inline-block;
-  animation: pulse 0.4s alternate infinite ease-in-out;
+.dog-head {
+  z-index: 100;
+  animation: head-move 1s ease-in-out infinite;
 }
 
-.loader span:nth-child(odd) {
-  animation-delay: 0.4s;
+div.dog-body {
+  height: 300px;
+  width: 225px;
+  margin-top: -175px;
+  margin-left: 40px;
+  background-image: url("http://www.clker.com/cliparts/T/0/9/J/e/4/dog-body-md.png");
+  background-repeat: no-repeat;
 }
 
-@keyframes pulse {
-  to {
-    transform: scale(0.8);
-    opacity: 0.5;
+/* ANIMATIONS */
+
+@keyframes head-move {
+  50% {
+    transform: rotate(-1.5deg);
   }
 }
