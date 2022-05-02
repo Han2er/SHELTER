@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Shelter | Main</title>
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Shelter | Main</title>
+</head>
+
+<body>
+  <header>
+    <div class="wraper">
       <div id="logo">
         <p id="logo_title" class="color-primary">Cozy House</p>
         <p id="logo_subtitle" class="color-light-xl">
@@ -22,225 +25,199 @@
         <a class="paragraph-l color-dark-s" href="#help">Help the shelter</a>
         <a class="paragraph-l color-dark-s" href="#contacts">Contacts</a>
       </nav>
-    </header>
-    <main>
-      <section id="start-screen">
-        <div id="start-screen-content">
-          <div id="content">
-            <h2 id="heading" class="color-light-xl">
-              Not only people need a house
-            </h2>
-            <p id="subheading" class="paragraph-l color-dark-s">
-              We offer to give a chance to a little and nice puppy with an
-              extremely wide and open heart. He or she will love you more than
-              anybody else in the world, you will see!
-            </p>
-            <a class="bg-color-primary button_primary" href="#"
-              ><span class="color-dark-3xl">Make a friend</span></a
-            >
-          </div>
-          <div id="start-screen-puppy"></div>
+    </div>
+  </header>
+  <main>
+    <section id="start-screen">
+      <div id="start-screen-content">
+        <div id="content">
+          <h2 id="heading" class="color-light-xl">
+            Not only people need a house
+          </h2>
+          <p id="subheading" class="paragraph-l color-dark-s">
+            We offer to give a chance to a little and nice puppy with an
+            extremely wide and open heart. He or she will love you more than
+            anybody else in the world, you will see!
+          </p>
+          <a class="bg-color-primary button_primary" href="#"><span class="color-dark-3xl">Make a friend</span></a>
         </div>
-      </section>
-      <section id="about">
-        <div id="about-content">
-          <div id="about-pets"></div>
-          <div id="about-subcontent">
-            <h3 class="color-dark-l">About the shelter “Cozy House”</h3>
-            <p class="paragraph-l color-dark-xl">
-              Currently we have 121 dogs and 342 cats on our hands and
-              statistics show that only 20% of them will find a family. The
-              others will continue to live with us and will be waiting for a
-              lucky chance to become dearly loved.
-            </p>
-            <p class="paragraph-l color-dark-xl">
-              We feed our wards with the best food and make sure that they do
-              not get sick, feel comfortable (including psychologically) and
-              well. We are supported by 87 volunteers and 28 employees of
-              various skill levels. About 12% of the animals are taken by the
-              shelter staff. Taking care of the animals, they become attached to
-              the pets and would hardly ever leave them alone.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="pets" class="bg-color-light-l">
-        <div id="pets-content">
-          <h3 class="color-dark-l">
-            Our friends who<br />are looking for a house
-          </h3>
-          <div id="slider">
-            <div id="back-arrow" class="button_arrow">
-              <img
-                class="arrow"
-                src="../../assets/icons/Arrow.svg"
-                alt="arrow back"
-              />
-            </div>
-            <div class="card">
-              <img src="../../assets/images/pets-katrine.png" alt="Katrine" />
-              <p class="pets-card-title color-dark-l">Katrine</p>
-              <a class="button_secondary" href="#"><span>Learn more</span></a>
-            </div>
-            <div class="card">
-              <img src="../../assets/images/pets-jennifer.png" alt="Jennifer" />
-              <p class="pets-card-title color-dark-l">Jennifer</p>
-              <a class="button_secondary" href="#"><span>Learn more</span></a>
-            </div>
-            <div class="card">
-              <img src="../../assets/images/pets-woody.png" alt="Woody" />
-              <p class="pets-card-title color-dark-l">Woody</p>
-              <a class="button_secondary" href="#"><span>Learn more</span></a>
-            </div>
-            <div id="forward-arrow" class="button_arrow">
-              <img
-                class="arrow"
-                src="../../assets/icons/Arrow.svg"
-                alt="arrow back"
-              />
-            </div>
-          </div>
-          <a class="button_primary bg-color-primary" href="#"
-            ><span class="color-dark-3xl">Get to know the rest</span></a
-          >
-        </div>
-        <!-- ----------------- -->
-        <!-- modal window -->
-        <div id="modal-wraper">
-          <!-- <div id="blackout"></div> -->
-          <div id="modal-window-1280">
-            <button id="close-modal"><img src="../../assets/icons/Close-button.svg" alt="Close"></button>
-            <div id="modal-window">
-              <img src="../../assets/images/pets-jennifer.png" width="500" height="500" alt="pet">
-              <div id="modal-content">
-                <h3>Jennifer</h3>
-                <h4>Dog - Labrador</h4>
-                <h5>Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</h5>
-                <ul>
-                  <li><span class="h5-modal-window">Age:</span><span class="h5"> 2 months</span></li>
-                  <li><span class="h5-modal-window">Inoculations:</span><span class="h5"> none</span></li>
-                  <li><span class="h5-modal-window">Diseases:</span><span class="h5"> none</span></li>
-                  <li><span class="h5-modal-window">Parasites:</span><span class="h5"> none</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>  
-        <!-- modal window -->
-        <!-- ----------------- -->
-      </section>
-      <section id="help">
-        <div id="help-content">
-          <h3 class="color-dark-l">How you can help our shelter</h3>
-          <ul>
-            <li>
-              <img src="../../assets/icons/icon-pet-food.svg" alt="Pet food" />
-              <h4 class="color-dark-l">Pet food</h4>
-            </li>
-            <li>
-              <img
-                src="../../assets/icons/icon-transportation.svg"
-                alt="Transportation"
-              />
-              <h4 class="color-dark-l">Transportation</h4>
-            </li>
-            <li>
-              <img src="../../assets/icons/icon-toys.svg" alt="Toys" />
-              <h4 class="color-dark-l">Toys</h4>
-            </li>
-            <li>
-              <img
-                src="../../assets/icons/icon-bowls-and-cups.svg"
-                alt="Bowls and cups"
-              />
-              <h4 class="color-dark-l">Bowls and cups</h4>
-            </li>
-            <li>
-              <img src="../../assets/icons/icon-shampoos.svg" alt="Shampoos" />
-              <h4 class="color-dark-l">Shampoos</h4>
-            </li>
-            <li>
-              <img src="../../assets/icons/icon-vitamins.svg" alt="Vitamins" />
-              <h4 class="color-dark-l">Vitamins</h4>
-            </li>
-            <li>
-              <img
-                src="../../assets/icons/icon-medicines.svg"
-                alt="Medicines"
-              />
-              <h4 class="color-dark-l">Medicines</h4>
-            </li>
-            <li>
-              <img
-                src="../../assets/icons/icon-collars-leashes.svg"
-                alt="Collars / leashes"
-              />
-              <h4 class="color-dark-l">Collars / leashes</h4>
-            </li>
-            <li>
-              <img
-                src="../../assets/icons/icon-sleeping-area.svg"
-                alt="Sleeping areas"
-              />
-              <h4 class="color-dark-l">Sleeping areas</h4>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section id="donation">
-        <div id="donation-content">
-          <img src="../../assets/images/donation-dog.png" alt="" />
-          <div id="donation-content-subcontent">
-            <h3 class="color-dark-l">You can also make a donation</h3>
-            <h5 class="color-dark-l">
-              Name of the bank / Type of bank account
-            </h5>
-            <div id="credit-card" class="bg-color-primary">
-              <div id="credit-card-content">
-                <img
-                  src="../../assets/icons/credit-card.svg"
-                  alt="credit card"
-                />
-                <h4 class="color-dark-l">8380 2880 8028 8791 7435</h4>
-              </div>
-            </div>
-            <p class="color-dark-m">
-              Legal information and lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
-              ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
-              et malesuada fames ac ante ipsum primis in faucibus.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div id="footer-content">
-        <div id="contacts">
-          <h3 class="color-light-xl">For questions and suggestions</h3>
-          <a id="mail" href="mailto:email@shelter.com"
-            ><img id="mail-icon" src="../../assets/icons/icon-email.svg" alt="email"></img>
-            <h4 class="color-primary">email@shelter.com</h4></a
-          >
-          <a id="phone" href="tel:+136745677554"
-            ><img id="phone-icon" src="../../assets/icons/icon-phone.svg" alt="phone"></img>
-            <h4 class="color-primary">+13 674 567 75 54</h4></a
-          >
-        </div>
-        <div id="locations">
-          <h3 class="color-light-xl">We are waiting for your visit</h3>
-          <div id="boston" class="location-flex">
-            <img id="boston-icon" src="../../assets/icons/icon-marker.svg" alt="boston address"></img>
-            <h4 class="color-primary">1 Central Street, Boston (entrance from the store)</h4>
-          </div>
-          <div id="london" class="location-flex">
-            <img id="london-icon" src="../../assets/icons/icon-marker.svg" alt="london address"></img>
-            <h4 class="color-primary">18 South Park, London </h4>
-          </div>
-        </div>
-        <img src="../../assets/images/footer-puppy.png" alt="footer puppy" />
+        <div id="start-screen-puppy"></div>
       </div>
-    </footer>
-    <script src="./script.js"></script>
-  </body>
+    </section>
+    <section id="about">
+      <div id="about-content">
+        <div id="about-pets"></div>
+        <div id="about-subcontent">
+          <h3 class="color-dark-l">About the shelter “Cozy House”</h3>
+          <p class="paragraph-l color-dark-xl">
+            Currently we have 121 dogs and 342 cats on our hands and
+            statistics show that only 20% of them will find a family. The
+            others will continue to live with us and will be waiting for a
+            lucky chance to become dearly loved.
+          </p>
+          <p class="paragraph-l color-dark-xl">
+            We feed our wards with the best food and make sure that they do
+            not get sick, feel comfortable (including psychologically) and
+            well. We are supported by 87 volunteers and 28 employees of
+            various skill levels. About 12% of the animals are taken by the
+            shelter staff. Taking care of the animals, they become attached to
+            the pets and would hardly ever leave them alone.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="pets" class="bg-color-light-l">
+      <div id="pets-content">
+        <h3 class="color-dark-l">
+          Our friends who<br />are looking for a house
+        </h3>
+        <div id="slider">
+          <div id="back-arrow" class="button_arrow">
+            <img class="arrow" src="../../assets/icons/Arrow.svg" alt="arrow back" />
+          </div>
+          <div class="card">
+            <img src="../../assets/images/pets-katrine.png" alt="Katrine" />
+            <p class="pets-card-title color-dark-l">Katrine</p>
+            <a class="button_secondary" href="#"><span>Learn more</span></a>
+          </div>
+          <div class="card">
+            <img src="../../assets/images/pets-jennifer.png" alt="Jennifer" />
+            <p class="pets-card-title color-dark-l">Jennifer</p>
+            <a class="button_secondary" href="#"><span>Learn more</span></a>
+          </div>
+          <div class="card">
+            <img src="../../assets/images/pets-woody.png" alt="Woody" />
+            <p class="pets-card-title color-dark-l">Woody</p>
+            <a class="button_secondary" href="#"><span>Learn more</span></a>
+          </div>
+          <div id="forward-arrow" class="button_arrow">
+            <img class="arrow" src="../../assets/icons/Arrow.svg" alt="arrow back" />
+          </div>
+        </div>
+        <a class="button_primary bg-color-primary" href="#"><span class="color-dark-3xl">Get to know the rest</span></a>
+      </div>
+      <!-- ----------------- -->
+      <!-- modal window -->
+      <div id="modal-wraper">
+        <!-- <div id="blackout"></div> -->
+        <div id="modal-window-1280">
+          <button id="close-modal"><img src="../../assets/icons/Close-button.svg" alt="Close"></button>
+          <div id="modal-window">
+            <img id="pet-avatar" src="../../assets/images/pets-jennifer.png" width="500" height="500" alt="pet">
+            <div id="modal-content">
+              <h3>Jennifer</h3>
+              <h4>Dog - Labrador</h4>
+              <h5>Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This
+                girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in
+                the house if she has all of her favorite toys.</h5>
+              <ul id="pet-stats">
+                <li><span class="h5-modal-window">Age:</span><span class="h5"> 2 months</span></li>
+                <li><span class="h5-modal-window">Inoculations:</span><span class="h5"> none</span></li>
+                <li><span class="h5-modal-window">Diseases:</span><span class="h5"> none</span></li>
+                <li><span class="h5-modal-window">Parasites:</span><span class="h5"> none</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal window -->
+      <!-- ----------------- -->
+    </section>
+    <section id="help">
+      <div id="help-content">
+        <h3 class="color-dark-l">How you can help our shelter</h3>
+        <ul>
+          <li>
+            <img src="../../assets/icons/icon-pet-food.svg" alt="Pet food" />
+            <h4 class="color-dark-l">Pet food</h4>
+          </li>
+          <li>
+            <img src="../../assets/icons/icon-transportation.svg" alt="Transportation" />
+            <h4 class="color-dark-l">Transportation</h4>
+          </li>
+          <li>
+            <img src="../../assets/icons/icon-toys.svg" alt="Toys" />
+            <h4 class="color-dark-l">Toys</h4>
+          </li>
+          <li>
+            <img src="../../assets/icons/icon-bowls-and-cups.svg" alt="Bowls and cups" />
+            <h4 class="color-dark-l">Bowls and cups</h4>
+          </li>
+          <li>
+            <img src="../../assets/icons/icon-shampoos.svg" alt="Shampoos" />
+            <h4 class="color-dark-l">Shampoos</h4>
+          </li>
+          <li>
+            <img src="../../assets/icons/icon-vitamins.svg" alt="Vitamins" />
+            <h4 class="color-dark-l">Vitamins</h4>
+          </li>
+          <li>
+            <img src="../../assets/icons/icon-medicines.svg" alt="Medicines" />
+            <h4 class="color-dark-l">Medicines</h4>
+          </li>
+          <li>
+            <img src="../../assets/icons/icon-collars-leashes.svg" alt="Collars / leashes" />
+            <h4 class="color-dark-l">Collars / leashes</h4>
+          </li>
+          <li>
+            <img src="../../assets/icons/icon-sleeping-area.svg" alt="Sleeping areas" />
+            <h4 class="color-dark-l">Sleeping areas</h4>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="donation">
+      <div id="donation-content">
+        <img src="../../assets/images/donation-dog.png" alt="" />
+        <div id="donation-content-subcontent">
+          <h3 class="color-dark-l">You can also make a donation</h3>
+          <h5 class="color-dark-l">
+            Name of the bank / Type of bank account
+          </h5>
+          <div id="credit-card" class="bg-color-primary">
+            <div id="credit-card-content">
+              <img src="../../assets/icons/credit-card.svg" alt="credit card" />
+              <h4 class="color-dark-l">8380 2880 8028 8791 7435</h4>
+            </div>
+          </div>
+          <p class="color-dark-m">
+            Legal information and lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
+            ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
+            et malesuada fames ac ante ipsum primis in faucibus.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div id="footer-content">
+      <div id="contacts">
+        <h3 class="color-light-xl">For questions and suggestions</h3>
+        <a id="mail" href="mailto:email@shelter.com"><img id="mail-icon" src="../../assets/icons/icon-email.svg"
+            alt="email"></img>
+          <h4 class="color-primary">email@shelter.com</h4>
+        </a>
+        <a id="phone" href="tel:+136745677554"><img id="phone-icon" src="../../assets/icons/icon-phone.svg"
+            alt="phone"></img>
+          <h4 class="color-primary">+13 674 567 75 54</h4>
+        </a>
+      </div>
+      <div id="locations">
+        <h3 class="color-light-xl">We are waiting for your visit</h3>
+        <div id="boston" class="location-flex">
+          <img id="boston-icon" src="../../assets/icons/icon-marker.svg" alt="boston address"></img>
+          <h4 class="color-primary">1 Central Street, Boston (entrance from the store)</h4>
+        </div>
+        <div id="london" class="location-flex">
+          <img id="london-icon" src="../../assets/icons/icon-marker.svg" alt="london address"></img>
+          <h4 class="color-primary">18 South Park, London </h4>
+        </div>
+      </div>
+      <img src="../../assets/images/footer-puppy.png" alt="footer puppy" />
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
 </html>
