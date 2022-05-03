@@ -28,7 +28,7 @@
     </div>
   </header>
   <main>
-    <section id="start-screen">
+    <section id="start-screen" class="flex-box-center">
       <div id="start-screen-content">
         <div id="content">
           <h2 id="heading" class="color-light-xl">
@@ -39,14 +39,14 @@
             extremely wide and open heart. He or she will love you more than
             anybody else in the world, you will see!
           </p>
-          <a class="bg-color-primary button_primary" href="#"><span class="color-dark-3xl">Make a friend</span></a>
+          <a class="bg-color-primary button_primary color-dark-3xl" href="#">Make a friend</a>
         </div>
         <div id="start-screen-puppy"></div>
       </div>
     </section>
-    <section id="about">
+    <section id="about" class="flex-box-center">
       <div id="about-content">
-        <div id="about-pets"></div>
+        <img src="../../assets/images/about-pets.png" alt="about pets">
         <div id="about-subcontent">
           <h3 class="color-dark-l">About the shelter “Cozy House”</h3>
           <p class="paragraph-l color-dark-xl">
@@ -67,39 +67,42 @@
       </div>
     </section>
     <section id="pets" class="bg-color-light-l">
-      <div id="pets-content">
+      <div id="pets-content" class="flex-box-center">
         <h3 class="color-dark-l">
           Our friends who<br />are looking for a house
         </h3>
-        <div id="slider">
+        <div id="slider-wraper" class="flex-box-center">
+
           <div id="back-arrow" class="button_arrow">
             <img class="arrow" src="../../assets/icons/Arrow.svg" alt="arrow back" />
           </div>
-          <div class="card">
-            <img src="../../assets/images/pets-katrine.png" alt="Katrine" />
-            <p class="pets-card-title color-dark-l">Katrine</p>
-            <a class="button_secondary" href="#"><span>Learn more</span></a>
-          </div>
-          <div class="card">
-            <img src="../../assets/images/pets-jennifer.png" alt="Jennifer" />
-            <p class="pets-card-title color-dark-l">Jennifer</p>
-            <a class="button_secondary" href="#"><span>Learn more</span></a>
-          </div>
-          <div class="card">
-            <img src="../../assets/images/pets-woody.png" alt="Woody" />
-            <p class="pets-card-title color-dark-l">Woody</p>
-            <a class="button_secondary" href="#"><span>Learn more</span></a>
+          <div id="slider" class="flex-box-center">
+            <div class="card">
+              <img src="../../assets/images/pets-katrine.png" alt="Katrine" />
+              <p class="pets-card-title color-dark-l">Katrine</p>
+              <a class="button_secondary" href="#">Learn more</a>
+            </div>
+            <div class="card">
+              <img src="../../assets/images/pets-jennifer.png" alt="Jennifer" />
+              <p class="pets-card-title color-dark-l">Jennifer</p>
+              <a class="button_secondary" href="#">Learn more</a>
+            </div>
+            <div class="card">
+              <img src="../../assets/images/pets-woody.png" alt="Woody" />
+              <p class="pets-card-title color-dark-l">Woody</p>
+              <a class="button_secondary" href="#">Learn more</a>
+            </div>
           </div>
           <div id="forward-arrow" class="button_arrow">
             <img class="arrow" src="../../assets/icons/Arrow.svg" alt="arrow back" />
           </div>
         </div>
-        <a class="button_primary bg-color-primary" href="../pets/index.html"><span class="color-dark-3xl">Get to know the rest</span></a>
+        <a class="button_primary bg-color-primary" href="../pets/index.html"><span class="color-dark-3xl">Get to know
+            the rest</span></a>
       </div>
       <!-- ----------------- -->
       <!-- modal window -->
       <div id="modal-wraper">
-        <!-- <div id="blackout"></div> -->
         <div id="modal-window-1280">
           <button id="close-modal"><img src="../../assets/icons/Close-button.svg" alt="Close"></button>
           <div id="modal-window">
@@ -123,7 +126,7 @@
       <!-- modal window -->
       <!-- ----------------- -->
     </section>
-    <section id="help">
+    <section id="help" class="flex-box-center">
       <div id="help-content">
         <h3 class="color-dark-l">How you can help our shelter</h3>
         <ul>
@@ -166,7 +169,7 @@
         </ul>
       </div>
     </section>
-    <section id="donation">
+    <section id="donation" class="flex-box-center">
       <div id="donation-content">
         <img src="../../assets/images/donation-dog.png" alt="" />
         <div id="donation-content-subcontent">
@@ -190,9 +193,9 @@
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="flex-box-center">
     <div id="footer-content">
-      <div id="contacts">
+      <div id="contacts" class="footer-cards">
         <h3 class="color-light-xl">For questions and suggestions</h3>
         <a id="mail" href="mailto:email@shelter.com"><img id="mail-icon" src="../../assets/icons/icon-email.svg"
             alt="email"></img>
@@ -203,7 +206,7 @@
           <h4 class="color-primary">+13 674 567 75 54</h4>
         </a>
       </div>
-      <div id="locations">
+      <div id="locations" class="footer-cards">
         <h3 class="color-light-xl">We are waiting for your visit</h3>
         <div id="boston" class="location-flex">
           <img id="boston-icon" src="../../assets/icons/icon-marker.svg" alt="boston address"></img>
