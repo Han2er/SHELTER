@@ -259,6 +259,7 @@ nav :nth-child(1) {
 .button_secondary:hover {
   background-color: #fddcc4;
   border-color: #fddcc4;
+  cursor: pointer;
 }
 
 .button_secondary {
@@ -396,6 +397,7 @@ nav :nth-child(1) {
   width: 348px;
   height: 43px;
   justify-content: center;
+  padding: 0;
 }
 
 #credit-card-content {
