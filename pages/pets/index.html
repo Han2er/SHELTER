@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shelter | Pets</title>
-  </head>
-  <body>
-    <h1>Pets</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../main/normalize.css">
+  <link rel="stylesheet" href="../main/style.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Shelter | Pets</title>
+</head>
+
+<body>
+  <header>
+    <div class="wraper">
+      <div id="logo">
+        <h1 id="logo_title" class="
+      color-dark-l">Cozy House</h1>
+        <p id="logo_subtitle" class="color-dark-3xl">
+          Shelter for pets in Boston
+        </p>
+      </div>
+      <nav>
+        <a class="paragraph-l color-dark-l" href="../main/index.html">About the shelter</a>
+        <a class="paragraph-l color-dark-l selected" href="#">Our pets</a>
+        <a class="paragraph-l color-dark-l" href="../main/index.html#help">Help the shelter</a>
+        <a class="paragraph-l color-dark-l" href="#contacts">Contacts</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h3 class="color-dark-l">Our friends who<br />
+        are looking for a house</h3>
+      <div id="card-container">
+        <div class="card">
+          <img src="../../assets/images/pets-katrine.png" alt="Katrine" />
+          <p class="pets-card-title color-dark-l">Katrine</p>
+          <a class="button_secondary" href="#">Learn more</a>
+        </div>
+        <div class="card">
+          <img src="../../assets/images/pets-jennifer.png" alt="Jennifer" />
+          <p class="pets-card-title color-dark-l">Jennifer</p>
+          <a class="button_secondary" href="#">Learn more</a>
+        </div>
+        <div class="card">
+          <img src="../../assets/images/pets-woody.png" alt="Woody" />
+          <p class="pets-card-title color-dark-l">Woody</p>
+          <a class="button_secondary" href="#">Learn more</a>
+        </div>
+        <div class="card">
+          <img src="../../assets/images/pets-sophia.png" alt="Sophia" />
+          <p class="pets-card-title color-dark-l">Sophia</p>
+          <a class="button_secondary" href="#">Learn more</a>
+        </div>
+        <div class="card">
+          <img src="../../assets/images/pets-timmy.png" alt="Timmy" />
+          <p class="pets-card-title color-dark-l">Timmy</p>
+          <a class="button_secondary" href="#">Learn more</a>
+        </div>
+        <div class="card">
+          <img src="../../assets/images/pets-charly.png" alt="Charly" />
+          <p class="pets-card-title color-dark-l">Charly</p>
+          <a class="button_secondary" href="#">Learn more</a>
+        </div>
+        <div class="card">
+          <img src="../../assets/images/pets-scarlet.png" alt="Scarlet" />
+          <p class="pets-card-title color-dark-l">Scarlet</p>
+          <a class="button_secondary" href="#">Learn more</a>
+        </div>
+        <div class="card">
+          <img src="../../assets/images/pets-freddie.png" alt="Freddie" />
+          <p class="pets-card-title color-dark-l">Freddie</p>
+          <a class="button_secondary" href="#">Learn more</a>
+        </div>
+      </div>
+      <div id="navigation">
+        <div class="button_arrow nav-button btn-disabled">
+          <h4>&lt;&lt;</h4>
+        </div>
+        <div class="button_arrow nav-button btn-disabled">
+          <h4>&lt;</h4>
+        </div>
+        <div class="button_arrow nav-button activated">
+          <h4>1</h4>
+        </div>
+        <div class="button_arrow nav-button ">
+          <h4>&gt;&gt;</h4>
+        </div>
+        <div class="button_arrow nav-button ">
+          <h4>&gt;</h4>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="flex-box-center">
+    <div id="footer-content">
+      <div id="contacts" class="footer-cards">
+        <h3 class="color-light-xl">For questions and suggestions</h3>
+        <a id="mail" href="mailto:email@shelter.com"><img id="mail-icon" src="../../assets/icons/icon-email.svg"
+            alt="email"></img>
+          <h4 class="color-primary">email@shelter.com</h4>
+        </a>
+        <a id="phone" href="tel:+136745677554"><img id="phone-icon" src="../../assets/icons/icon-phone.svg"
+            alt="phone"></img>
+          <h4 class="color-primary">+13 674 567 75 54</h4>
+        </a>
+      </div>
+      <div id="locations" class="footer-cards">
+        <h3 class="color-light-xl">We are waiting for your visit</h3>
+        <a target="_blank" href="https://goo.gl/maps/AtxrqyYqTpVt6uZz5" id="boston" class="location-flex">
+          <img id="boston-icon" src="../../assets/icons/icon-marker.svg" alt="boston address"></img>
+          <h4 class="color-primary">1 Central Street, Boston (entrance from the store)</h4>
+        </a>
+        <a target="_blank" href="https://goo.gl/maps/f1BtZ7QQRSjennrc6" id="london" class="location-flex">
+          <img id="london-icon" src="../../assets/icons/icon-marker.svg" alt="london address"></img>
+          <h4 class="color-primary">18 South Park, London </h4>
+        </a>
+      </div>
+      <img src="../../assets/images/footer-puppy.png" alt="footer puppy" />
+    </div>
+  </footer>
+</body>
+
 </html>
