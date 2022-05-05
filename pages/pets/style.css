@@ -10,19 +10,18 @@ nav a:hover {
   color: #292929;
 }
 main {
-  height: 1342px;
   display: flex;
-  align-items: center;
   justify-content: center;
   background-color: #f6f6f6;
 }
 main section {
-  height: 1162px;
+  min-height: 1162px;
   width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  margin: 90px 40px;
 }
 main section h3 {
   width: 400px;
@@ -32,11 +31,12 @@ main section h3 {
 }
 #card-container {
   width: 100%;
-  height: 930px;
+  min-height: 930px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-around;
+  margin: 45px 0;
 }
 #navigation {
   width: 340px;
