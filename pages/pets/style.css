@@ -65,3 +65,7 @@ main section h3 {
 .activated {
   background-color: #f1cdb3;
 }
+.activated:hover {
+  background-color: #f1cdb3;
+  border-color: #f1cdb3;
+}
