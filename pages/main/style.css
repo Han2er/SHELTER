@@ -1,5 +1,4 @@
 * {
-  /* width: 1280px; */
   box-sizing: border-box;
   margin: 0;
   border: 0;
@@ -140,7 +139,7 @@ nav a:hover {
 
 /* about section */
 #about {
-  height: 585px;
+  min-height: 585px;
 }
 #about-content {
   width: 1100px;
@@ -148,7 +147,18 @@ nav a:hover {
   display: flex;
   justify-content: space-evenly;
 }
+@media screen and (max-width: 900px) {
+  #about-content {
+    flex-direction: column;
+    min-height: 1050px;
+    align-items: center;
+  }
+  #about-content img {
+    order: 2;
+  }
+}
 #about-content img {
+  width: 300px;
   height: 408px;
   margin-left: 16px;
 }
@@ -187,13 +197,22 @@ nav a:hover {
   width: 262px;
 }
 #slider-wraper {
-  width: 1200px;
+  max-width: 100%;
   justify-content: space-between;
 }
 #slider {
   width: 990px;
   height: 435px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
   justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  #slider {
+    justify-content: center;
+    gap: 30px;
+  }
 }
 #pets-content > a span {
   position: static;
@@ -214,16 +233,18 @@ nav a:hover {
 }
 
 #back-arrow {
-  width: 52px;
+  min-width: 52px;
   height: 52px;
   cursor: pointer;
+  margin: 0 10px;
 }
 
 #forward-arrow {
-  width: 52px;
+  min-width: 52px;
   height: 52px;
   cursor: pointer;
   transform: rotate(-180deg);
+  margin: 0 10px;
 }
 
 .card {
@@ -342,7 +363,6 @@ nav a:hover {
 
 #help-content ul {
   max-width: 1030px;
-  height: 281px;
   list-style-type: none;
   padding: 0;
   display: flex;
@@ -369,15 +389,26 @@ nav a:hover {
 }
 
 #donation {
-  height: 462px;
+  min-height: 462px;
   background: #f6f6f6;
 }
 
 #donation-content {
   width: 915px;
-  height: 282px;
   display: flex;
-  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  gap: 30px;
+}
+@media screen and (max-width: 900px) {
+  #donation-content {
+    flex-direction: column;
+    align-items: center;
+    min-height: 780px;
+  }
+  #donation-content > img {
+    order: 2;
+  }
 }
 
 #donation-content > img {
@@ -429,7 +460,7 @@ nav a:hover {
 }
 
 footer {
-  height: 350px;
+  min-height: 350px;
   background: url(../../assets/images/noise_transparent@2x.png),
     radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
     #211f20;
@@ -441,10 +472,12 @@ footer h4 {
 }
 
 #footer-content {
-  width: 1200px;
-  height: 310px;
+  /* width: 1200px; */
+  min-height: 310px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 .footer-cards {
   height: 235px;
@@ -694,11 +727,11 @@ h5,
 #modal-window-1280 {
   position: relative;
 }
-#modal-window-1280 button {
+#close-modal {
   position: absolute;
   width: 52px;
   height: 52px;
-  left: 900px;
+  left: 100%;
   top: -52px;
   border: 2px solid #f1cdb3;
   box-sizing: border-box;
@@ -710,51 +743,46 @@ h5,
   height: 500px;
   background: #fafafa;
   border-radius: 9px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1030px) {
+  #modal-window {
+    width: calc(100vw - 52px * 2 - 30px);
+    height: 350px;
+  }
+  #modal-content > h5 {
+    margin: 20px 0 !important;
+  }
 }
 #modal-window:hover {
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
+#pet-avatar {
+  height: 100%;
+}
 #modal-content {
-  position: absolute;
-  width: 351px;
-  height: 362px;
-  left: 529px;
-  top: 50px;
   color: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #modal-content > h3 {
-  position: absolute;
   width: auto;
   height: 45px;
-  left: 1px;
-  top: 0px;
   color: black;
+  margin-bottom: 10px;
 }
 #modal-content > h4 {
-  position: absolute;
   width: auto;
   height: 23px;
-  left: 1px;
-  top: 55px;
   color: black;
 }
 #modal-content > h5 {
-  position: absolute;
-  width: 350px;
-  height: 102px;
-  left: 1px;
-  top: 118px;
+  max-width: 350px;
   color: black;
-}
-#modal-content h5 {
-  color: black;
-}
-#modal-content ul {
-  position: absolute;
-  /* width: 155px;
-  height: 102px; */
-  left: 1px;
-  top: 260px;
+  margin: 40px 0;
 }
 #modal-content ul li {
   margin-bottom: 10px;
