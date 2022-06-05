@@ -13,6 +13,7 @@ main {
   display: flex;
   justify-content: center;
   background-color: #f6f6f6;
+  padding: 0 10px;
 }
 main section {
   min-height: 1162px;
@@ -38,10 +39,23 @@ main section h3 {
   align-content: space-around;
   margin: 45px 0;
 }
+
 #navigation {
   width: 340px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  #card-container {
+    justify-content: center;
+  }
+  #navigation {
+    width: 100%;
+    max-width: 340px;
+  }
+  main section h3 {
+    width: auto;
+  }
 }
 .nav-button {
   width: 52px;
