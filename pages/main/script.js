@@ -156,3 +156,29 @@ fetch("./pets.json")
       });
     });
   });
+
+//   ---   burger   ---
+
+const burger = document.getElementById("burger");
+
+burger.addEventListener("click", () => {
+  const burgerNav = document.createElement("nav");
+  burgerNav.id = "burger-nav";
+  burgerNav.innerHTML = `
+  <a class="paragraph-l color-dark-s selected" href="#about">About the shelter</a>
+        <a class="paragraph-l color-dark-s" href="../../pages/pets/index.html">Our pets</a>
+        <a class="paragraph-l color-dark-s" href="#help">Help the shelter</a>
+        <a class="paragraph-l color-dark-s" href="#contacts">Contacts</a>`;
+
+  const burgerWindow = document.createElement("div");
+  burgerWindow.appendChild(burgerNav);
+  burgerWindow.className = "burger-window";
+
+  document.body.appendChild(burgerWindow);
+  burger.replaceWith(burger.cloneNode(true));
+
+  burger.addEventListener("click", () => {
+    document.body.removeChild(burgerWindow);
+    burger.replaceWith(burger.cloneNode(true));
+  });
+});
