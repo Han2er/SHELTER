@@ -244,7 +244,7 @@ nav a:hover {
   width: 990px;
   height: 435px;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   overflow: hidden;
   justify-content: space-between;
 }
@@ -290,6 +290,7 @@ nav a:hover {
   flex-direction: column;
   background: #fafafa;
   border-radius: 9px;
+  transition: all 0.5s;
 }
 .card a {
   font: 400 normal 17px "Georgia";
@@ -323,10 +324,10 @@ nav a:hover {
   #pets-content h3 {
     width: auto;
   }
-  #slider {
+  /* #slider {
     justify-content: center;
     gap: 30px;
-  }
+  } */
 }
 
 /* button styles */
