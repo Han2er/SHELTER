@@ -9,6 +9,9 @@ body {
   height: 100vh;
   position: relative;
 }
+section {
+  overflow: hidden;
+}
 .flex-box-center {
   display: flex;
   align-items: center;

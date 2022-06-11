@@ -44,8 +44,6 @@ fetch("./pets.json")
     return response.json();
   })
   .then((data) => {
-    console.log(data);
-
     data.forEach((pet) => {
       const img = document.createElement("img");
       img.src = pet.img;
@@ -70,8 +68,6 @@ fetch("./pets.json")
 
       //add event listener
       card.addEventListener("click", () => {
-        console.log("cklick");
-
         petsAvatar.setAttribute("src", pet.img);
         modalCcontent.innerHTML = `
       <h3>${pet.name}</h3>
@@ -104,24 +100,22 @@ fetch("./pets.json")
 
     //get slide width
     const slideWidth = slides[0].offsetWidth + slideMargin * 2;
-    console.log(slideWidth);
-    const sliderWidth = slider.offsetWidth;
 
     // current slide counter
     let curSlide = 0;
     // number of slides shown
     let slidesToShow = 3;
+    setSlidesToShowNumber();
 
     window.onresize = setSlidesToShowNumber;
     function setSlidesToShowNumber() {
+      if (slider.offsetWidth / slideWidth >= 3) slidesToShow = 3;
       if (
         slider.offsetWidth / slideWidth < 3 &&
         slider.offsetWidth / slideWidth > 2
       )
         slidesToShow = 2;
       if (slider.offsetWidth / slideWidth < 2) slidesToShow = 1;
-
-      console.log(slidesToShow);
     }
 
     // select previous slide button
@@ -144,7 +138,6 @@ fetch("./pets.json")
         slide.style.transform = `translateX(${
           -slideWidth * curSlide * slidesToShow
         }px)`;
-        console.log(curSlide);
       });
     });
 
